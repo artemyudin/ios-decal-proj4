@@ -22,11 +22,13 @@ Never forget about your friends and turn your acquaintances into great friends!
 ## Implementation
 ### Model
  - Main.swift
+
 ### View
  - PeopleView.swift
  - DetailPersonView.swift
  - AddPerson.swift
  - AddInteraction.swift
+ 
 ### Controller
  - PeopleViewController.swift
  - DetailPersonViewController.swift
