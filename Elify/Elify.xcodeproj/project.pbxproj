@@ -1,0 +1,334 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2861256E1C13B02C003BCFA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2861256D1C13B02C003BCFA7 /* AppDelegate.swift */; };
+		286125731C13B02C003BCFA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286125711C13B02C003BCFA7 /* Main.storyboard */; };
+		286125761C13B02C003BCFA7 /* Elify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 286125741C13B02C003BCFA7 /* Elify.xcdatamodeld */; };
+		286125781C13B02C003BCFA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 286125771C13B02C003BCFA7 /* Assets.xcassets */; };
+		2861257B1C13B02C003BCFA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 286125791C13B02C003BCFA7 /* LaunchScreen.storyboard */; };
+		2889CBB51C13C40C005E1B05 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2861256F1C13B02C003BCFA7 /* LoginViewController.swift */; };
+		2889CBB71C13CDD9005E1B05 /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2889CBB61C13CDD9005E1B05 /* PeopleViewController.swift */; };
+		2889CBB91C13F78D005E1B05 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2889CBB81C13F78D005E1B05 /* Person.swift */; };
+		2889CBBB1C14E057005E1B05 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2889CBBA1C14E057005E1B05 /* PersonTableViewCell.swift */; };
+		28D3F2EB1C15065E0089AFFC /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D3F2EA1C15065E0089AFFC /* PersonDetailViewController.swift */; };
+		28D3F2ED1C151FE20089AFFC /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = 28D3F2EC1C151FE20089AFFC /* person.png */; };
+		28D3F2EF1C1628530089AFFC /* AddPersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D3F2EE1C1628530089AFFC /* AddPersonViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2861256A1C13B02C003BCFA7 /* Elify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Elify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2861256D1C13B02C003BCFA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2861256F1C13B02C003BCFA7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		286125721C13B02C003BCFA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		286125751C13B02C003BCFA7 /* Elify.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Elify.xcdatamodel; sourceTree = "<group>"; };
+		286125771C13B02C003BCFA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2861257A1C13B02C003BCFA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2861257C1C13B02C003BCFA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2889CBB61C13CDD9005E1B05 /* PeopleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
+		2889CBB81C13F78D005E1B05 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		2889CBBA1C14E057005E1B05 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		28D3F2EA1C15065E0089AFFC /* PersonDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
+		28D3F2EC1C151FE20089AFFC /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
+		28D3F2EE1C1628530089AFFC /* AddPersonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPersonViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		286125671C13B02C003BCFA7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		286125611C13B02C003BCFA7 = {
+			isa = PBXGroup;
+			children = (
+				2861256C1C13B02C003BCFA7 /* Elify */,
+				2861256B1C13B02C003BCFA7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2861256B1C13B02C003BCFA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2861256A1C13B02C003BCFA7 /* Elify.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2861256C1C13B02C003BCFA7 /* Elify */ = {
+			isa = PBXGroup;
+			children = (
+				28D3F2EC1C151FE20089AFFC /* person.png */,
+				28D3F2EE1C1628530089AFFC /* AddPersonViewController.swift */,
+				2861256D1C13B02C003BCFA7 /* AppDelegate.swift */,
+				28D3F2EA1C15065E0089AFFC /* PersonDetailViewController.swift */,
+				2889CBBA1C14E057005E1B05 /* PersonTableViewCell.swift */,
+				2889CBB81C13F78D005E1B05 /* Person.swift */,
+				2889CBB61C13CDD9005E1B05 /* PeopleViewController.swift */,
+				2861256F1C13B02C003BCFA7 /* LoginViewController.swift */,
+				286125711C13B02C003BCFA7 /* Main.storyboard */,
+				286125771C13B02C003BCFA7 /* Assets.xcassets */,
+				286125791C13B02C003BCFA7 /* LaunchScreen.storyboard */,
+				2861257C1C13B02C003BCFA7 /* Info.plist */,
+				286125741C13B02C003BCFA7 /* Elify.xcdatamodeld */,
+			);
+			path = Elify;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		286125691C13B02C003BCFA7 /* Elify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2861257F1C13B02C003BCFA7 /* Build configuration list for PBXNativeTarget "Elify" */;
+			buildPhases = (
+				286125661C13B02C003BCFA7 /* Sources */,
+				286125671C13B02C003BCFA7 /* Frameworks */,
+				286125681C13B02C003BCFA7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Elify;
+			productName = Elify;
+			productReference = 2861256A1C13B02C003BCFA7 /* Elify.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		286125621C13B02C003BCFA7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Artem Yudin";
+				TargetAttributes = {
+					286125691C13B02C003BCFA7 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = FVX8RDEU6M;
+					};
+				};
+			};
+			buildConfigurationList = 286125651C13B02C003BCFA7 /* Build configuration list for PBXProject "Elify" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 286125611C13B02C003BCFA7;
+			productRefGroup = 2861256B1C13B02C003BCFA7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				286125691C13B02C003BCFA7 /* Elify */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		286125681C13B02C003BCFA7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28D3F2ED1C151FE20089AFFC /* person.png in Resources */,
+				2861257B1C13B02C003BCFA7 /* LaunchScreen.storyboard in Resources */,
+				286125781C13B02C003BCFA7 /* Assets.xcassets in Resources */,
+				286125731C13B02C003BCFA7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		286125661C13B02C003BCFA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2889CBBB1C14E057005E1B05 /* PersonTableViewCell.swift in Sources */,
+				2889CBB91C13F78D005E1B05 /* Person.swift in Sources */,
+				2889CBB51C13C40C005E1B05 /* LoginViewController.swift in Sources */,
+				2889CBB71C13CDD9005E1B05 /* PeopleViewController.swift in Sources */,
+				286125761C13B02C003BCFA7 /* Elify.xcdatamodeld in Sources */,
+				28D3F2EB1C15065E0089AFFC /* PersonDetailViewController.swift in Sources */,
+				2861256E1C13B02C003BCFA7 /* AppDelegate.swift in Sources */,
+				28D3F2EF1C1628530089AFFC /* AddPersonViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		286125711C13B02C003BCFA7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				286125721C13B02C003BCFA7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		286125791C13B02C003BCFA7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2861257A1C13B02C003BCFA7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2861257D1C13B02C003BCFA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2861257E1C13B02C003BCFA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		286125801C13B02C003BCFA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Elify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = elify.Elify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		286125811C13B02C003BCFA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Elify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = elify.Elify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		286125651C13B02C003BCFA7 /* Build configuration list for PBXProject "Elify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2861257D1C13B02C003BCFA7 /* Debug */,
+				2861257E1C13B02C003BCFA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2861257F1C13B02C003BCFA7 /* Build configuration list for PBXNativeTarget "Elify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				286125801C13B02C003BCFA7 /* Debug */,
+				286125811C13B02C003BCFA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		286125741C13B02C003BCFA7 /* Elify.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				286125751C13B02C003BCFA7 /* Elify.xcdatamodel */,
+			);
+			currentVersion = 286125751C13B02C003BCFA7 /* Elify.xcdatamodel */;
+			path = Elify.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 286125621C13B02C003BCFA7 /* Project object */;
+}

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Elify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IyA-F2-zNF">
+                                <rect key="frame" x="81" y="58" width="157" height="30"/>
+                                <animations/>
+                                <attributedString key="attributedText">
+                                    <fragment content="E L I F Y">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="27" name="HelveticaNeue-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" paragraphSpacingBefore="2" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CZ9-qu-Nk1">
+                                <rect key="frame" x="0.0" y="96" width="320" height="30"/>
+                                <animations/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Your Social Relations Manager">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="19" name="HelveticaNeue-Thin"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" paragraphSpacingBefore="2" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vY5-Bo-a2a">
+                                <rect key="frame" x="13" y="204" width="293" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="293" id="iNY-9C-tjA"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="go"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Password" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xLP-Rt-JY5">
+                                <rect key="frame" x="13" y="256" width="293" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="293" id="UJx-qu-N6h"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwV-PT-5KP">
+                                <rect key="frame" x="129" y="318" width="63" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="23"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="processEntry" destination="BYZ-38-t0r" eventType="touchUpInside" id="brp-JL-41u"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XU2-OJ-mXE">
+                                <rect key="frame" x="128" y="350" width="63" height="30"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Sign up"/>
+                                <connections>
+                                    <action selector="switchState" destination="BYZ-38-t0r" eventType="touchUpInside" id="nHf-7e-fFd"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lU4-yR-mdM">
+                                <rect key="frame" x="13" y="288" width="293" height="30"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="293" id="8pS-e1-6tr"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSBackgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="16" name="HelveticaNeue-UltraLight"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XU2-OJ-mXE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Xp-eq-GpO"/>
+                            <constraint firstItem="xLP-Rt-JY5" firstAttribute="top" secondItem="vY5-Bo-a2a" secondAttribute="bottom" constant="22" id="2W6-xx-Sw9"/>
+                            <constraint firstItem="lU4-yR-mdM" firstAttribute="top" secondItem="xLP-Rt-JY5" secondAttribute="bottom" constant="2" id="91S-g5-ybi"/>
+                            <constraint firstItem="CZ9-qu-Nk1" firstAttribute="top" secondItem="IyA-F2-zNF" secondAttribute="bottom" constant="8" id="9sV-So-YDq"/>
+                            <constraint firstItem="XU2-OJ-mXE" firstAttribute="top" secondItem="dwV-PT-5KP" secondAttribute="bottom" constant="2" id="L8f-nF-UWB"/>
+                            <constraint firstItem="dwV-PT-5KP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="298" id="US1-Nd-LVe"/>
+                            <constraint firstItem="lU4-yR-mdM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VOx-Ph-0cN"/>
+                            <constraint firstItem="IyA-F2-zNF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vhf-8W-o9h"/>
+                            <constraint firstItem="vY5-Bo-a2a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dCr-W9-Mg6"/>
+                            <constraint firstItem="dwV-PT-5KP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nOX-lq-bwN"/>
+                            <constraint firstItem="xLP-Rt-JY5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ozV-MA-mE5"/>
+                            <constraint firstItem="vY5-Bo-a2a" firstAttribute="top" secondItem="CZ9-qu-Nk1" secondAttribute="bottom" constant="78" id="sqI-1g-Z2W"/>
+                            <constraint firstItem="IyA-F2-zNF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="38" id="wW1-Xl-L4A"/>
+                            <constraint firstItem="CZ9-qu-Nk1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zFK-NG-6mF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="vY5-Bo-a2a" id="Dpx-3X-QDe"/>
+                        <outlet property="main" destination="dwV-PT-5KP" id="eOB-yS-L2O"/>
+                        <outlet property="next" destination="XU2-OJ-mXE" id="X0z-Gc-hph"/>
+                        <outlet property="pass" destination="xLP-Rt-JY5" id="ol9-Q3-nq5"/>
+                        <outlet property="stderr" destination="lU4-yR-mdM" id="JZw-Bp-irc"/>
+                        <segue destination="A2x-zH-PK7" kind="modal" identifier="login" id="Ige-xR-rW0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="490" y="624"/>
+        </scene>
+        <!--Connections-->
+        <scene sceneID="pcN-vc-jNO">
+            <objects>
+                <viewController id="ebC-1b-K78" customClass="PeopleViewController" customModule="Elify" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Connections" id="SOU-Bh-Gjh">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="mys-2z-9Wy">
+                            <connections>
+                                <segue destination="dJh-Bw-LnH" kind="push" id="3XM-7u-lfb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kdJ-zL-nyh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1411" y="624"/>
+        </scene>
+        <!--Add Person-->
+        <scene sceneID="rbj-tV-DpM">
+            <objects>
+                <viewController id="dJh-Bw-LnH" customClass="AddPersonViewController" customModule="Elify" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="72r-4y-mbT"/>
+                        <viewControllerLayoutGuide type="bottom" id="D4x-mb-6bH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CVR-sq-wLX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Person" id="RTu-tr-doh">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Z9G-tI-A9d">
+                            <connections>
+                                <action selector="onCancel:" destination="dJh-Bw-LnH" id="cu3-LY-9I8"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="vxI-jY-IiS">
+                            <connections>
+                                <action selector="onSave:" destination="dJh-Bw-LnH" id="K3x-dZ-nyY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MR8-0k-beT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1822" y="624"/>
+        </scene>
+        <!--Elify-->
+        <scene sceneID="J4x-G8-Z6v">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="A2x-zH-PK7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Elify" id="TLX-ms-prE"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aoG-8V-bZm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ebC-1b-K78" kind="relationship" relationship="rootViewController" id="VC9-l4-dKg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hbB-3g-hmY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="879" y="624"/>
+        </scene>
+    </scenes>
+</document>
