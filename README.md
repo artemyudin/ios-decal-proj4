@@ -32,3 +32,7 @@ Never forget about your friends and turn your acquaintances into great friends!
  - AddPersonViewController.swift
  - PersonDetailViewController.swift
 
+### Testing/Login info
+ - To test it out, use login account
+ - Username: artem@gmail.com
+ - Pass: hunter2
