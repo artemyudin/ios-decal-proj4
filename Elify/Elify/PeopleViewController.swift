@@ -38,7 +38,7 @@ class PeopleViewController: UITableViewController {
     }
     
     func check(newCount: Int) {
-        if oldCount >= newCount {
+        if oldCount >= newCount && oldCount != 0 {
             print("fetching again")
             getPeople()
         } else {

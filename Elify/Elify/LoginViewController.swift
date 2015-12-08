@@ -146,8 +146,47 @@ class LoginViewController: UIViewController {
     }
     
     func signupUser(email: String, pass: String) {
+        self.emailS = email
+        self.passS = pass
         print("SignUp: \(email)")
-        print("NOT IMPLEMENTED")
+        let request = NSMutableURLRequest(URL: NSURL(string: "http://elify.co:3001/api/signup")!)
+        let session = NSURLSession.sharedSession()
+        request.HTTPMethod = "POST"
+        
+        let params = ["email": email, "password": pass] as Dictionary<String, String>
+        
+        request.HTTPBody = try? NSJSONSerialization.dataWithJSONObject(params, options: NSJSONWritingOptions(rawValue: 0))
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        
+        let task = session.dataTaskWithRequest(request, completionHandler: {data, response, error -> Void in
+            let json = try? NSJSONSerialization.JSONObjectWithData(data!, options: .MutableLeaves) as? NSDictionary
+            
+            if(error != nil) {
+                print(error!.localizedDescription)
+                let jsonStr = NSString(data: data!, encoding: NSUTF8StringEncoding)
+                NSOperationQueue.mainQueue().addOperationWithBlock {
+                    self.displayError("Unexpected Error. Please try again later")
+                }
+                print("Error could not parse JSON: '\(jsonStr)'")
+                return
+            } else {
+                if let _ = json {
+                    NSOperationQueue.mainQueue().addOperationWithBlock {
+                        self.loginUser(self.emailS, pass: self.passS)
+                    }
+                    
+                } else {
+                    let jsonStr = NSString(data: data!, encoding: NSUTF8StringEncoding)
+                    NSOperationQueue.mainQueue().addOperationWithBlock {
+                        self.displayError("Unexpected Error. Please try again later")
+                    }
+                    print("Error could not parse JSON: \(jsonStr)")
+                }
+            }
+        })
+        
+        task.resume()
     }
 
 }
